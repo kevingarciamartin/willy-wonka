@@ -10,9 +10,6 @@
         <!-- <a-cursor></a-cursor> -->
       </a-entity>
 
-      <a-light type="point" intensity="0.8" position="0 6 0"></a-light>
-      <!-- <a-light type="point" intensity="0.05" position="0 2.5 6.1"></a-light> -->
-
       <!-- Room -->
       <a-cylinder
         position="0 5 0"
@@ -58,9 +55,20 @@
         <a-circle
           position="0 4.9 0"
           radius="5"
-          color=""
+          color="white"
           rotation="90 0 0"
         ></a-circle>
+
+        <!-- Lamp -->
+        <a-circle
+          position="0 4.89 0"
+          rotation="90 0 0"
+          scale="0.66 1 1"
+          radius="2"
+          roughness="0"
+          emissive="antiquewhite"
+        ></a-circle>
+        <a-light type="point" intensity="0.9" position="0 3.5 0"></a-light>
       </a-cylinder>
 
       <!-- Elevator -->
