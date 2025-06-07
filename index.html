@@ -3,6 +3,7 @@
   <head>
     <title>Willy Wonka's Bedroom</title>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.2.0/dist/aframe-extras.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -50,6 +51,18 @@
         <a-asset-item
           id="pictureFrame"
           src="./assets/models/pictureFrame/pictureFrame.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="gummyBearRed"
+          src="./assets/models/gummyBear/gummyBearRed.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="gummyBearGreen"
+          src="./assets/models/gummyBear/gummyBearGreen.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="gummyBearBlue"
+          src="./assets/models/gummyBear/gummyBearBlue.gltf"
         ></a-asset-item>
         <img id="grassTexture" src="./assets/textures/grass.jpg" />
       </a-assets>
@@ -179,6 +192,27 @@
           theta-length="30"
           metalness="1"
         ></a-cylinder>
+
+        <!-- Gummy Bears -->
+        <a-entity scale="0.25 0.25 0.25" position="0 1.5 1.8">
+          <a-gltf-model
+            src="#gummyBearRed"
+            position="-3 0 -0.5"
+            rotation="0 -20 0"
+            animation-mixer
+            ></a-gltf-model>
+            <a-gltf-model
+            src="#gummyBearGreen"
+            position="0 0 0"
+            animation-mixer
+            ></a-gltf-model>
+            <a-gltf-model
+            src="#gummyBearBlue"
+            position="3 0 -0.5"
+            rotation="0 20 0"
+            animation-mixer
+          ></a-gltf-model>
+        </a-entity>
       </a-cylinder>
 
       <!-- Bed -->
