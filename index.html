@@ -20,6 +20,10 @@
           src="./assets/models/peppermintCandy/peppermintCandy.gltf"
         ></a-asset-item>
         <a-asset-item
+          id="chocolatePillow"
+          src="./assets/models/chocolatePillow/chocolatePillow.gltf"
+        ></a-asset-item>
+        <a-asset-item
           id="desk"
           src="./assets/models/desk/desk.gltf"
         ></a-asset-item>
@@ -179,12 +183,30 @@
 
       <!-- Bed -->
       <a-entity position="6.7 0 0" rotation="0 -90 0">
+        <!-- Bed Frame -->
         <a-gltf-model src="#bed" scale="0.0012 0.0012 0.0012"></a-gltf-model>
-        <a-gltf-model
-          src="#peppermintCandy"
-          position="0 0.3 1.1"
-          scale="1.3 0.5 1.3"
-        ></a-gltf-model>
+
+        <!-- Mattress & Pillows -->
+        <a-entity position="0 0.3 1.1">
+          <!-- Mattress -->
+          <a-gltf-model
+            src="#peppermintCandy"
+            scale="1.3 0.5 1.3"
+          ></a-gltf-model>
+
+          <a-entity position="0 0.3 -0.3" scale="1.3 1 1">
+            <a-gltf-model
+              src="#chocolatePillow"
+              scale="0.02 0.02 0.02"
+              position="-0.2 0 0"
+            ></a-gltf-model>
+            <a-gltf-model
+              src="#chocolatePillow"
+              scale="0.02 0.02 0.02"
+              position="0.5 0 0"
+            ></a-gltf-model>
+          </a-entity>
+        </a-entity>
       </a-entity>
 
       <!-- Desk & Co -->
@@ -239,7 +261,7 @@
           position="0.6 1.3 -0.5"
           rotation="-90 -70 0"
         ></a-gltf-model>
-        
+
         <!-- Wonka Wubble Bubble -->
         <a-gltf-model
           src="#wonkaWubbleBubble"
