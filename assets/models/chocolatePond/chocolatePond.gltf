@@ -1,0 +1,567 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 4890,
+      "max": [
+        -0.15574783086776733,
+        3.9188804626464844,
+        5.830087184906006
+      ],
+      "min": [
+        -6.82449197769165,
+        0.9423965215682983,
+        -2.998344659805298
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 58680,
+      "componentType": 5126,
+      "count": 4890,
+      "max": [
+        0.9998618960380554,
+        0.9997127652168274,
+        0.998898446559906
+      ],
+      "min": [
+        -0.9998759627342224,
+        -1.0,
+        -0.9999939203262329
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 4890,
+      "max": [
+        0.9971132874488831,
+        0.9990234375
+      ],
+      "min": [
+        0.0009765625,
+        0.0009765625
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 25344,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 117360,
+      "componentType": 5126,
+      "count": 27719,
+      "max": [
+        19.818679809570313,
+        1.2446322441101074,
+        18.07590103149414
+      ],
+      "min": [
+        -28.892290115356445,
+        -1.249433921657328e-06,
+        -30.635042190551758
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 449988,
+      "componentType": 5126,
+      "count": 27719,
+      "max": [
+        0.9997441172599792,
+        1.0,
+        0.9995518922805786
+      ],
+      "min": [
+        -0.9999116063117981,
+        -1.0,
+        -0.9997555017471313
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 39120,
+      "componentType": 5126,
+      "count": 27719,
+      "max": [
+        0.9990234375,
+        0.9657608866691589
+      ],
+      "min": [
+        0.0009765625,
+        0.0009765625
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 101376,
+      "componentType": 5125,
+      "count": 62478,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 782616,
+      "componentType": 5126,
+      "count": 2372,
+      "max": [
+        13.525300979614258,
+        15.380462646484375,
+        -8.788480758666992
+      ],
+      "min": [
+        -26.573741912841797,
+        -0.09667915105819702,
+        -27.88776206970215
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 811080,
+      "componentType": 5126,
+      "count": 2372,
+      "max": [
+        0.9995463490486145,
+        1.0,
+        0.9995462894439697
+      ],
+      "min": [
+        -0.9995463490486145,
+        -0.36259475350379944,
+        -0.9995462894439697
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 260872,
+      "componentType": 5126,
+      "count": 2372,
+      "max": [
+        1.0,
+        0.9792946577072144
+      ],
+      "min": [
+        -2.9802322387695313e-08,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 351288,
+      "componentType": 5125,
+      "count": 11040,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 839544,
+      "componentType": 5126,
+      "count": 2150,
+      "max": [
+        12.426119804382324,
+        2.05251145362854,
+        4.783914566040039
+      ],
+      "min": [
+        -21.70610809326172,
+        -0.892291247844696,
+        -12.282526969909668
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 865344,
+      "componentType": 5126,
+      "count": 2150,
+      "max": [
+        0.9912933111190796,
+        0.9999758005142212,
+        1.0
+      ],
+      "min": [
+        -0.9912932515144348,
+        -0.9999758005142212,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 279848,
+      "componentType": 5126,
+      "count": 2150,
+      "max": [
+        0.9990234375,
+        0.8919298648834229
+      ],
+      "min": [
+        0.0009765625,
+        0.0009765625
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 395448,
+      "componentType": 5125,
+      "count": 10080,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Eivind Kolbjørnsen (https://sketchfab.com/EiKoool)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/croissant-dolphins-13a1f3ef73f34fd79b29ed1375a5874f",
+      "title": "Croissant dolphins"
+    },
+    "generator": "Sketchfab-14.91.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 435768,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 297048,
+      "byteOffset": 435768,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 891144,
+      "byteOffset": 732816,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1623960,
+      "uri": "chocolatePond.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_specular"
+  ],
+  "images": [
+    {
+      "uri": "textures/Croisant_baseColor.png"
+    },
+    {
+      "uri": "textures/Choc_baseColor.png"
+    },
+    {
+      "uri": "textures/Fountain_baseColor.png"
+    },
+    {
+      "uri": "textures/March_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 0.29104850605258986
+        }
+      },
+      "name": "Croisant",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "alphaCutoff": 1.0,
+      "alphaMode": "MASK",
+      "name": "Choc",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.06518791730249957,
+          0.01238383177289024,
+          0.00019396821879227175,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 0.17523862929867975
+        }
+      },
+      "name": "Fountain",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 1.0
+        }
+      },
+      "name": "March",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.7177164730406796
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Dolph_Croisant_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Ocean_Choc_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Fountain1_Fountain_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Marshmal_March_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "09f1ad2931b343b0972bbb728c5eeda1.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "name": "DolphChocOcean11"
+    },
+    {
+      "children": [
+        5
+      ],
+      "name": "Dolph"
+    },
+    {
+      "mesh": 0,
+      "name": "Dolph_Croisant_0"
+    },
+    {
+      "children": [
+        7
+      ],
+      "name": "Ocean"
+    },
+    {
+      "mesh": 1,
+      "name": "Ocean_Choc_0"
+    },
+    {
+      "children": [
+        9
+      ],
+      "name": "Fountain1"
+    },
+    {
+      "mesh": 2,
+      "name": "Fountain1_Fountain_0"
+    },
+    {
+      "children": [
+        11
+      ],
+      "name": "Marshmal"
+    },
+    {
+      "mesh": 3,
+      "name": "Marshmal_March_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    }
+  ]
+}
