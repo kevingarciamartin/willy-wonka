@@ -76,6 +76,10 @@
           id="flowerBed"
           src="./assets/models/flowerBed/flowerBed.gltf"
         ></a-asset-item>
+        <a-asset-item
+          id="mushrooms"
+          src="./assets/models/mushrooms/mushrooms.gltf"
+        ></a-asset-item>
         <img id="grassTexture" src="./assets/textures/grass.jpg" />
       </a-assets>
 
@@ -119,7 +123,18 @@
           color="green"
           rotation="-90 0 0"
           material="src: #grassTexture; repeat: 10 10; roughness: 1; metalness: 0;"
-        ></a-circle>
+        >
+          <a-entity scale="0.25 0.25 0.25" rotation="90 0 0">
+            <a-gltf-model src="#mushrooms"></a-gltf-model>
+            <a-gltf-model src="#mushrooms" position="1 0 4"></a-gltf-model>
+            <a-gltf-model src="#mushrooms" position="-2 0 7"></a-gltf-model>
+            <a-gltf-model src="#mushrooms" position="-8 0 -7"></a-gltf-model>
+            <a-gltf-model src="#mushrooms" position="-12 0 -11"></a-gltf-model>
+            <a-gltf-model src="#mushrooms" position="9 0 -12"></a-gltf-model>
+            <a-gltf-model src="#mushrooms" position="11 0 12"></a-gltf-model>
+            <a-gltf-model src="#mushrooms" position="10 0 2"></a-gltf-model>
+          </a-entity>
+        </a-circle>
 
         <!-- Roof -->
         <a-circle
@@ -315,7 +330,7 @@
           position="1 1.3 -0.25"
           rotation="0 -15 0"
         ></a-gltf-model>
-        
+
         <!-- Wonka Runts -->
         <a-gltf-model
           src="#wonkaRunts"
