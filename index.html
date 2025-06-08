@@ -104,7 +104,14 @@
           width="0.01"
           height="7"
           depth="3"
-        ></a-box>
+        >
+          <a-gltf-model
+            src="#peppermintCandy"
+            scale="0.5 0.5 0.5"
+            rotation="0 0 -90"
+            animation="property: rotation; to: 360 0 -90; loop: true; dur: 8000; easing: linear;"
+          ></a-gltf-model>
+        </a-box>
         <a-box
           position="1.3 -3.48 4.8"
           rotation="0 90 0"
@@ -430,12 +437,12 @@
       </a-gltf-model>
 
       <!-- Candy Turret -->
-       <a-gltf-model
-       src="#candyTurret"
-       scale="0.5 0.5 0.5"
-       position="2 0 3.9"
-       rotation="0 170 0"
-       ></a-gltf-model>
+      <a-gltf-model
+        src="#candyTurret"
+        scale="0.5 0.5 0.5"
+        position="2 0 3.9"
+        rotation="0 170 0"
+      ></a-gltf-model>
     </a-scene>
   </body>
 </html>
