@@ -4,10 +4,33 @@
     <title>Willy Wonka's Bedroom</title>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.2.0/dist/aframe-extras.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="loadingScreen">
+      <h1>Loading Willy Wonka's Bedroom...</h1>
+      <h2 id="loadingProgress">0%</h2>
+    </div>
+
     <a-scene>
-      <a-entity camera look-controls wasd-controls position="0 1.85 7.5">
+      <a-entity
+        id="cameraRig"
+        camera
+        look-controls
+        wasd-controls
+        position="0 1.85 7.5"
+      >
+        <a-animation
+          id="cameraShake"
+          attribute="position"
+          dur="100"
+          from="-0.05 1.85 7.5"
+          to="0.05 1.85 7.5"
+          direction="alternate"
+          repeat="indefinite"
+          easing="linear"
+        ></a-animation>
         <!-- <a-cursor></a-cursor> -->
       </a-entity>
 
@@ -15,82 +38,102 @@
         <a-asset-item
           id="bed"
           src="./assets/models/bed/bed.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="peppermintCandy"
           src="./assets/models/peppermintCandy/peppermintCandy.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="chocolatePillow"
           src="./assets/models/chocolatePillow/chocolatePillow.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="desk"
           src="./assets/models/desk/desk.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="chair"
           src="./assets/models/chair/candyChair.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="goldenTicket"
           src="./assets/models/goldenTicket/goldenTicket.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="chocolateFactory"
           src="./assets/models/chocolateFactory/chocolateFactory.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="chocolateBar"
           src="./assets/models/chocolateBar/chocolateBar.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="wonkaWubbleBubble"
           src="./assets/models/wonkaWubbleBubble/wonkaWubbleBubble.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="wonkaRunts"
           src="./assets/models/wonkaRunts/wonkaRunts.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="pictureFrame"
           src="./assets/models/pictureFrame/pictureFrame.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="gummyBearRed"
           src="./assets/models/gummyBear/gummyBearRed.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="gummyBearGreen"
           src="./assets/models/gummyBear/gummyBearGreen.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="gummyBearBlue"
           src="./assets/models/gummyBear/gummyBearBlue.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="chocolatePond"
           src="./assets/models/chocolatePond/chocolatePond.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="flowerBed"
           src="./assets/models/flowerBed/flowerBed.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="mushrooms"
           src="./assets/models/mushrooms/mushrooms.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="candyTurret"
           src="./assets/models/candyTurret/candyTurret.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="lollipop"
           src="./assets/models/lollipop/lollipop.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <a-asset-item
           id="lollipop2"
           src="./assets/models/lollipop2/lollipop2.gltf"
+          class="gltf-model-asset"
         ></a-asset-item>
         <img id="grassTexture" src="./assets/textures/grass.jpg" />
       </a-assets>
@@ -218,22 +261,28 @@
 
         <!-- Doors -->
         <a-cylinder
+          id="leftDoor"
           radius="2"
           height="3"
           width="0.5"
           side="double"
           theta-start="25"
-          theta-length="30"
+          theta-length="60"
           metalness="1"
+          rotation="0 0 0"
+          animation="property: rotation; from: 0 -40 0; dur: 1500; easing: easeOutQuad; startEvents: openDoors;"
         ></a-cylinder>
         <a-cylinder
+          id="rightDoor"
           radius="2"
           height="3"
           width="0.5"
           side="double"
-          theta-start="305"
-          theta-length="30"
+          theta-start="315"
+          theta-length="60"
           metalness="1"
+          rotation="0 0 0"
+          animation="property: rotation; to: 0 -40 0; dur: 1500; easing: easeOutQuad; startEvents: openDoors;"
         ></a-cylinder>
 
         <!-- Gummy Bears -->
@@ -271,6 +320,7 @@
             scale="1.3 0.5 1.3"
           ></a-gltf-model>
 
+          <!-- Pillows -->
           <a-entity position="0 0.3 -0.3" scale="1.3 1 1">
             <a-gltf-model
               src="#chocolatePillow"
