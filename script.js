@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
           setTimeout(() => {
             loadingScreen.remove();
           }, 1500); // Wait for the fade out to complete
-        }, 750); // Increased delay for rendering to settle (adjust as needed)
+        }, 1500); // Increased delay for rendering to settle
       }
     });
   });
