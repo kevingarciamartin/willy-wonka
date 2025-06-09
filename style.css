@@ -1,19 +1,74 @@
+body {
+  margin: 0;
+  overflow: hidden; 
+  font-family: "Luckiest Guy", cursive, Arial, sans-serif;
+  color: #fff; 
+  background-color: #000;
+}
+
 #loadingScreen {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background: linear-gradient(135deg, #4b0082, #8a2be2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-family: sans-serif;
   z-index: 9999;
+  text-align: center;
+  background-image: url("assets/textures/candy-stripes.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+#loadingScreen h1 {
+  font-size: 4em;
+  margin-bottom: 25px;
+  color: rebeccapurple;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4),
+    -2px -2px 0px rgba(255, 255, 255, 0.2);
+  letter-spacing: 2px;
 }
 
 #loadingProgress {
-  margin-top: 10px;
+  font-size: 40px;
+  margin-top: 15px;
+  color: rebeccapurple;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#spinner {
+  border: 0.5rem solid rebeccapurple;
+  border-radius: 50%;
+  border-top: 0.75rem solid pink;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  margin-top: 15px;
+}
+
+.spinner-hidden {
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

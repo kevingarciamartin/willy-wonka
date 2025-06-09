@@ -5,12 +5,17 @@
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.2.0/dist/aframe-extras.min.js"></script>
     <script src="script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="loadingScreen">
       <h1>Loading Willy Wonka's Bedroom...</h1>
       <h2 id="loadingProgress">0%</h2>
+      <div id="spinner" class="spinner-hidden"></div>
     </div>
 
     <a-scene>
@@ -20,19 +25,7 @@
         look-controls
         wasd-controls
         position="0 1.85 7.5"
-      >
-        <a-animation
-          id="cameraShake"
-          attribute="position"
-          dur="100"
-          from="-0.05 1.85 7.5"
-          to="0.05 1.85 7.5"
-          direction="alternate"
-          repeat="indefinite"
-          easing="linear"
-        ></a-animation>
-        <!-- <a-cursor></a-cursor> -->
-      </a-entity>
+      ></a-entity>
 
       <a-assets>
         <a-asset-item

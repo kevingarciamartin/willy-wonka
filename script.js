@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const scene = document.querySelector("a-scene");
   const loadingScreen = document.getElementById("loadingScreen");
   const loadingProgress = document.getElementById("loadingProgress");
-  const cameraShake = document.getElementById("cameraShake");
+  const spinner = document.getElementById("spinner");
   const leftDoor = document.getElementById("leftDoor");
   const rightDoor = document.getElementById("rightDoor");
 
@@ -24,27 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
       updateProgress();
 
       if (loadedModels === totalModels) {
-        console.log("All GLTF models loaded!");
+        loadingProgress.style.display = "none";
+        spinner.classList.remove("spinner-hidden");
         // Add a small delay to allow for rendering to catch up
         setTimeout(() => {
-          // 1. Stop camera shake
-          cameraShake.setAttribute("animation", { enabled: false });
-          document
-            .getElementById("cameraRig")
-            .setAttribute("position", "0 1.85 7.5");
-
-          // 2. Trigger door opening animations
+          // Trigger door opening animations
           leftDoor.emit("openDoors");
           rightDoor.emit("openDoors");
 
-          // 3. Fade out and remove loading screen
+          // Fade out and remove loading screen
           loadingScreen.style.opacity = "0";
-          loadingScreen.style.transition = "opacity 1.5s ease-out"; // Smooth fade out
+          loadingScreen.style.transition = "opacity 1.5s ease-out";
 
           setTimeout(() => {
             loadingScreen.remove();
           }, 1500); // Wait for the fade out to complete
-        }, 1500); // Increased delay for rendering to settle
+        }, 3000); // Increased delay for rendering to settle
       }
     });
   });
