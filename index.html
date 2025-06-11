@@ -15,16 +15,17 @@
     <div id="loadingScreen">
       <h1>Loading Willy Wonka's Bedroom...</h1>
       <h2 id="loadingProgress">0%</h2>
-      <div id="spinner" class="spinner-hidden"></div>
+      <h2 id="loadingInstruction" class="hidden">
+        Click or press any key to enter!
+      </h2>
     </div>
 
     <a-scene>
       <a-entity
         id="cameraRig"
         camera
-        look-controls
-        wasd-controls
-        position="0 1.85 7.5"
+        look-controls="enabled: false"
+        wasd-controls="enabled: false"
       ></a-entity>
 
       <a-assets>
@@ -129,6 +130,11 @@
           class="gltf-model-asset"
         ></a-asset-item>
         <img id="grassTexture" src="./assets/textures/grass.jpg" />
+        <audio
+          id="music"
+          src="./assets/tracks/light-and-easy-christian-larssen-mono.mp3"
+          preload="auto"
+        ></audio>
       </a-assets>
 
       <!-- Room -->
@@ -298,6 +304,13 @@
             animation-mixer
           ></a-gltf-model>
         </a-entity>
+
+        <!-- Music -->
+        <a-sound
+          src="#music"
+          loop="true"
+          play-on-user-gesture="target: #loadingScreen; volume: 0.25;"
+        ></a-sound>
       </a-cylinder>
 
       <!-- Bed -->

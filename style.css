@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  overflow: hidden; 
+  overflow: hidden;
   font-family: "Luckiest Guy", cursive, Arial, sans-serif;
-  color: #fff; 
+  color: #fff;
   background-color: #000;
 }
 
@@ -40,35 +40,25 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-#spinner {
-  border: 0.5rem solid rebeccapurple;
-  border-radius: 50%;
-  border-top: 0.75rem solid pink;
-  width: 40px;
-  height: 40px;
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
-  margin-top: 15px;
+#loadingInstruction {
+  font-size: 2.5em;
+  margin-top: 20px;
+  color: #f7d757;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  animation: pulse 1.5s infinite alternate;
 }
 
-.spinner-hidden {
+.hidden {
   display: none;
 }
 
-@-webkit-keyframes spin {
+@keyframes pulse {
   0% {
-    -webkit-transform: rotate(0deg);
+    transform: scale(1);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+    transform: scale(1.05);
+    opacity: 0.8;
   }
 }
