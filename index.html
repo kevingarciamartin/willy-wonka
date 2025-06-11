@@ -134,11 +134,21 @@
           src="./assets/models/lollipop2/lollipop2.gltf"
           class="gltf-model-asset"
         ></a-asset-item>
-        <img id="grassTexture" src="./assets/textures/grass.jpg" />
+        <a-asset-item
+          id="candyTree"
+          src="./assets/models/candyTree/candyTree.gltf"
+          class="gltf-model-asset"
+        ></a-asset-item>
+        <img
+          id="grassTexture"
+          src="./assets/textures/grass.jpg"
+          class="gltf-model-asset"
+        />
         <audio
           id="music"
           src="./assets/tracks/light-and-easy-christian-larssen-mono.mp3"
           preload="auto"
+          class="gltf-model-asset"
         ></audio>
       </a-assets>
 
@@ -538,6 +548,49 @@
           position="-1 1.7 0.5"
         ></a-gltf-model>
       </a-entity>
+
+      <!-- Candy Trees -->
+      <a-gltf-model
+        src="#candyTree"
+        scale="0.001 0.002 0.001"
+        position="3 0 -4"
+      ></a-gltf-model>
+      <a-gltf-model
+        src="#candyTree"
+        scale="0.001 0.001 0.001"
+        position="5 0 -3.2"
+        rotation="0 50 0"
+      ></a-gltf-model>
+      <a-gltf-model
+        src="#candyTree"
+        scale="0.001 0.0023 0.001"
+        position="4 0 -3"
+        rotation="0 150 0"
+      ></a-gltf-model>
+      <a-gltf-model
+        src="#candyTree"
+        scale="0.001 0.003 0.001"
+        position="6 0 2"
+        rotation="0 290 0"
+      ></a-gltf-model>
+      <a-gltf-model
+        src="#candyTree"
+        scale="0.0005 0.0008 0.0005"
+        position="-6 0 -2"
+        rotation="0 290 0"
+      ></a-gltf-model>
+      <a-gltf-model
+        src="#candyTree"
+        scale="0.0005 0.0005 0.0005"
+        position="-5.5 0 -2"
+        rotation="0 29 0"
+      ></a-gltf-model>
+      <a-gltf-model
+        src="#candyTree"
+        scale="0.0007 0.0005 0.0007"
+        position="-4 0 -3"
+        rotation="0 56 0"
+      ></a-gltf-model>
     </a-scene>
   </body>
 </html>
